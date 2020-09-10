@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:islamic_radio/widgets/bottom_navigation.dart';
+import 'package:islamic_radio/widgets/player.dart';
 import 'package:provider/provider.dart';
-import 'package:radio_player/screens/favorites.dart';
-import 'package:radio_player/utils/station_favorites.dart';
 import 'package:share/share.dart';
 
 import './models/radio_station.dart';
 import './models/station_list.dart';
+import './screens/favorites.dart';
 import './screens/stations.dart';
-import './widgets/bottom_navigation.dart';
-import './widgets/player.dart';
+import './utils/station_favorites.dart';
 import 'utils/config.dart';
 
 void main() => runApp(MyApp());

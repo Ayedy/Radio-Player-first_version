@@ -1,4 +1,4 @@
-package com.andrewtechful.radio_player;
+package com.aymanayed.islamic_radio;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

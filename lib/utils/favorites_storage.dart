@@ -20,14 +20,14 @@ class FavoritesStorage {
     try {
       final file = await _localFile;
 
-      print(favoritesList);
+      //print(favoritesList);
       String json = jsonEncode(favoritesList);
-      print(json);
+      //print(json);
       await file.writeAsString(json, mode: FileMode.write);
 
       return true;
     } catch (e) {
-      print(e);
+      //print(e);
     }
 
     return false;
@@ -53,7 +53,7 @@ class FavoritesStorage {
 
       return favs;
     } catch (e) {
-      print(e);
+      //print(e);
     }
 
     return List();

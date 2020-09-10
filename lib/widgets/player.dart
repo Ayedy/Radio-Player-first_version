@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:provider/provider.dart';
-import 'package:radio_player/utils/station_favorites.dart';
 
 import '../models/radio_station.dart';
+import '../utils/station_favorites.dart';
 
 const String STREAM_TIME_OUT_ERROR = 'Error: Stream timed out.';
 const int STREAM_TIME_OUT_DURATION = 15;
@@ -212,7 +212,7 @@ class _PlayerState extends State<Player> with WidgetsBindingObserver {
   }
 
   void _printDebugInfo() async {
-    print(await AudioService.running);
+    //print(await AudioService.running);
   }
 
   @override
@@ -230,6 +230,7 @@ class _PlayerState extends State<Player> with WidgetsBindingObserver {
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
           stops: [0.2, 1.0],
+          //colors: [Color(0xFF263241), Color(0xFF413f6A)],
           colors: [Color(0xFF263241), Color(0xFF413f6A)],
         ),
       ),

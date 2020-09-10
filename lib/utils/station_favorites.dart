@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:radio_player/models/radio_station.dart';
-import 'package:radio_player/utils/favorites_storage.dart';
+
+import '../models/radio_station.dart';
+import '../utils/favorites_storage.dart';
 
 class StationFavorites extends ChangeNotifier {
   static final StationFavorites _instance = StationFavorites._internal();
@@ -36,7 +37,7 @@ class StationFavorites extends ChangeNotifier {
 
   Future removeFavorite(RadioStation station) async {
     this.favorites.removeWhere((fStation) => fStation.name == station.name);
-      notifyListeners();
+    notifyListeners();
 
     await storage.writeFavorites(this.favorites);
   }

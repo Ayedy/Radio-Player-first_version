@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:radio_player/models/radio_station.dart';
+
+import '../models/radio_station.dart';
 
 class RadioCard extends StatelessWidget {
   final RadioStation station;
